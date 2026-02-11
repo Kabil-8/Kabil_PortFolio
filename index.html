@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>⚡ K. Kabil | Network Architect | Full Stack Developer</title>
+    <title>K. Kabil | Aspiring Software Engineer | Full Stack Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
@@ -690,8 +690,7 @@
             align-items: center;
             background: 
                 linear-gradient(135deg, rgba(10, 10, 10, 0.9), rgba(26, 26, 26, 0.8)),
-                linear-gradient(45deg, rgba(59, 130, 246, 0.05), rgba(168, 85, 247, 0.05)),
-                url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+                linear-gradient(45deg, rgba(59, 130, 246, 0.05), rgba(168, 85, 247, 0.05));
             position: relative;
             overflow: hidden;
             padding-top: 70px;
@@ -1553,6 +1552,249 @@
             font-weight: bold;
         }
 
+        /* ========== COMPACT EXPERIENCE & INTERNSHIPS SECTION ========== */
+        .experience {
+            background: 
+                linear-gradient(135deg, var(--color-black), var(--color-dark)),
+                radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.05), transparent 70%);
+            position: relative;
+        }
+
+        .experience::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background: linear-gradient(to bottom, var(--color-black), transparent);
+            z-index: 1;
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-xl);
+        }
+
+        .experience-card {
+            background: 
+                linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
+                var(--color-gray-900);
+            padding: var(--space-xl);
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-smooth);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: var(--shadow-lg), var(--glow-primary);
+            border-color: var(--color-primary-400);
+        }
+
+        .experience-card h3 {
+            color: var(--color-white);
+            margin-bottom: var(--space-sm);
+        }
+
+        .experience-card .company {
+            color: var(--color-primary-400);
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            margin-bottom: var(--space-md);
+        }
+
+        .experience-card .duration {
+            display: inline-block;
+            padding: var(--space-xs) var(--space-sm);
+            background: linear-gradient(135deg, var(--color-primary-600), var(--color-purple-600));
+            color: var(--color-white);
+            border-radius: 20px;
+            font-family: var(--font-heading);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--space-md);
+            text-transform: uppercase;
+        }
+
+        .experience-card ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .experience-card li {
+            position: relative;
+            padding-left: var(--space-md);
+            margin-bottom: var(--space-xs);
+            color: var(--color-gray-300);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .experience-card li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--color-primary-400);
+            font-weight: bold;
+        }
+
+        /* ========== COMPACT CERTIFICATIONS SECTION ========== */
+        .certifications {
+            background: 
+                linear-gradient(135deg, var(--color-darker), var(--color-gray-900)),
+                radial-gradient(circle at 20% 80%, rgba(16, 185, 129, 0.05), transparent 70%);
+            position: relative;
+        }
+
+        .certifications::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background: linear-gradient(to bottom, var(--color-darker), transparent);
+            z-index: 1;
+        }
+
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+        }
+
+        .certification-card {
+            background: 
+                linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
+                var(--color-gray-900);
+            padding: var(--space-lg);
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-smooth);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            text-align: center;
+        }
+
+        .certification-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: var(--shadow-lg), var(--glow-primary);
+            border-color: var(--color-primary-400);
+        }
+
+        .certification-card i {
+            font-size: 2rem;
+            margin-bottom: var(--space-md);
+            background: linear-gradient(135deg, var(--color-primary-400), var(--color-secondary-400));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .certification-card h4 {
+            color: var(--color-white);
+            margin-bottom: var(--space-xs);
+            font-size: 1.1rem;
+        }
+
+        .certification-card .issuer {
+            color: var(--color-gray-300);
+            font-size: 0.8rem;
+            margin-bottom: var(--space-sm);
+            font-family: var(--font-mono);
+        }
+
+        .certification-card .date {
+            color: var(--color-primary-400);
+            font-size: 0.8rem;
+            font-family: var(--font-mono);
+        }
+
+        /* ========== COMPACT EXTRACURRICULAR SECTION ========== */
+        .extracurricular {
+            background: 
+                linear-gradient(135deg, var(--color-black), var(--color-dark)),
+                radial-gradient(circle at 50% 100%, rgba(249, 115, 22, 0.05), transparent 70%);
+            position: relative;
+        }
+
+        .extracurricular::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background: linear-gradient(to bottom, var(--color-black), transparent);
+            z-index: 1;
+        }
+
+        .extracurricular-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-xl);
+        }
+
+        .extracurricular-card {
+            background: 
+                linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
+                var(--color-gray-900);
+            padding: var(--space-lg);
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-smooth);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .extracurricular-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: var(--shadow-lg), var(--glow-primary);
+            border-color: var(--color-primary-400);
+        }
+
+        .extracurricular-card h3 {
+            color: var(--color-white);
+            margin-bottom: var(--space-sm);
+            font-size: 1.2rem;
+        }
+
+        .extracurricular-card .role {
+            color: var(--color-primary-400);
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            margin-bottom: var(--space-md);
+        }
+
+        .extracurricular-card .duration {
+            display: inline-block;
+            padding: var(--space-xs) var(--space-sm);
+            background: linear-gradient(135deg, var(--color-primary-600), var(--color-purple-600));
+            color: var(--color-white);
+            border-radius: 20px;
+            font-family: var(--font-heading);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--space-md);
+            text-transform: uppercase;
+        }
+
+        .extracurricular-card p {
+            color: var(--color-gray-300);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
         /* ========== COMPACT CONTACT SECTION ========== */
         .contact {
             background: 
@@ -1992,6 +2234,12 @@
                 grid-template-columns: 1fr;
                 gap: var(--space-xl);
             }
+            
+            .experience-grid,
+            .certifications-grid,
+            .extracurricular-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 768px) {
@@ -2112,7 +2360,10 @@
             }
             
             .skill-card,
-            .project-card {
+            .project-card,
+            .experience-card,
+            .certification-card,
+            .extracurricular-card {
                 margin: 0 var(--space-xs);
             }
         }
@@ -2174,7 +2425,10 @@
                     <li><a href="#skills"><span>03.</span> Skills</a></li>
                     <li><a href="#projects"><span>04.</span> Projects</a></li>
                     <li><a href="#education"><span>05.</span> Education</a></li>
-                    <li><a href="#contact"><span>06.</span> Contact</a></li>
+                    <li><a href="#experience"><span>06.</span> Experience</a></li>
+                    <li><a href="#certifications"><span>07.</span> Certifications</a></li>
+                    <li><a href="#extracurricular"><span>08.</span> Leadership</a></li>
+                    <li><a href="#contact"><span>09.</span> Contact</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -2192,17 +2446,17 @@
                 <div class="hero-text">
                     <p class="subtitle">Hi, my name is</p>
                     <h1>K. KABIL</h1>
-                    <h2 class="sub-heading">I BUILD DIGITAL FUTURES</h2>
-                    <p class="highlight">Computer Science Engineer | Frontend Developer | IoT Specialist crafting innovative solutions at the intersection of technology and creativity. Passionate about creating digital experiences that matter.</p>
+                    <h2 class="sub-heading">Aspiring Software Engineer</h2>
+                    <p class="highlight">Aspiring software engineer with a strong foundation in Computer Science and Engineering and hands-on experience in developing full stack applications. Seeking to leverage technical skills and problem-solving mindset to contribute to impactful product development at a forward-thinking organization.</p>
                     <div class="btn-group">
-                        <a href="#projects" class="btn btn-primary">VIEW MY WORK</a>
-                        <a href="#contact" class="btn btn-outline">HIRE ME</a>
+                        <a href="#projects" class="btn btn-primary">VIEW PROJECTS</a>
+                        <a href="#contact" class="btn btn-outline">GET IN TOUCH</a>
+                        <a href="Project resume.docx" class="btn btn-ghost" download><i class="fas fa-download"></i> DOWNLOAD RESUME</a>
                     </div>
                     <div class="social-icons">
-                        <a href="#" title="GitHub" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-                        <a href="#" title="LinkedIn" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" title="Twitter" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
-                        <a href="#" title="Instagram" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/kabil-8" title="GitHub" aria-label="GitHub Profile" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/k-kabil" title="LinkedIn" aria-label="LinkedIn Profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:kabilk2023@gmail.com" title="Email" aria-label="Send Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -2220,29 +2474,24 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>The Creative Technologist</h3>
-                    <p>I'm a passionate Computer Science student at Dr. Mahalingam College of Engineering with a CGPA of 8.29, specializing in frontend development and IoT-based systems. My journey in tech combines analytical thinking with creative problem-solving to build solutions that make a difference.</p>
-                    <p class="highlight">Beyond coding, I'm an event organizer, video editor, and tech enthusiast who thrives on bringing ideas to life. I believe technology should be both powerful and accessible, which drives my approach to development and innovation.</p>
-                    <p>My goal is to become a Network Architect or Full Stack Developer, creating systems that connect people and technology in meaningful ways. I'm always excited about learning new technologies and pushing the boundaries of what's possible.</p>
+                    <h3>Full Stack Developer & Software Engineer</h3>
+                    <p>I'm an aspiring software engineer with a strong foundation in Computer Science and Engineering, currently pursuing my Bachelor's degree at Dr. Mahalingam College of Engineering and Technology.</p>
+                    <p class="highlight">My area of interest includes Full Stack Web Development and Programming, as well as UI/UX Design and Frontend Development. I enjoy creating complete solutions that are both functional and visually appealing.</p>
+                    <p>With hands-on experience in developing full stack applications, I aim to leverage my technical skills and problem-solving mindset to contribute to impactful product development at forward-thinking organizations.</p>
                     <div class="about-skills">
-                        <h3>Technical Arsenal</h3>
+                        <h3>Core Competencies</h3>
                         <div class="skills-list">
-                            <span class="skill-tag">C/C++</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">HTML5/CSS3</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Firebase</span>
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">NodeMCU</span>
-                            <span class="skill-tag">Git</span>
-                            </div>
+                            <span class="skill-tag">Full Stack Development</span>
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Team Collaboration</span>
+                            <span class="skill-tag">Project Management</span>
+                            <span class="skill-tag">Continuous Learning</span>
+                        </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="you.jpg" alt="About Kabil - Working Environment" loading="lazy">
+                    <img src="you.jpg" alt="Kabil - Development Environment" loading="lazy">
                 </div>
             </div>
         </div>
@@ -2252,20 +2501,71 @@
     <section class="skills" id="skills">
         <div class="container">
             <div class="section-header">
-                <h2>My Expertise</h2>
+                <h2>Technical Skills</h2>
             </div>
             <div class="skills-container">
                 <div class="skill-card">
                     <i class="fas fa-code"></i>
-                    <h3>Frontend Development</h3>
-                    <p>Building responsive, user-friendly interfaces with modern frameworks. Focused on performance, accessibility, and creating seamless user experiences across all devices.</p>
+                    <h3>Programming Languages</h3>
+                    <p>Strong foundation in multiple programming languages with focus on software development principles and problem-solving.</p>
+                    <div class="skill-progress">
+                        <div class="skill-name">
+                            <span>Java</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-name">
+                            <span>Python</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-name">
+                            <span>C++</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-name">
+                            <span>C</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Frontend & Full Stack</h3>
+                    <p>Building responsive, interactive user interfaces with modern frameworks and libraries for optimal user experience.</p>
                     <div class="skill-progress">
                         <div class="skill-name">
                             <span>React</span>
-                            <span>92%</span>
+                            <span>85%</span>
                         </div>
                         <div class="progress-bar">
-                            <div class="progress-fill" style="width: 92%"></div>
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-name">
+                            <span>Node.js</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 82%"></div>
                         </div>
                     </div>
                     <div class="skill-progress">
@@ -2277,90 +2577,15 @@
                             <div class="progress-fill" style="width: 88%"></div>
                         </div>
                     </div>
-                    <div class="skill-progress">
-                        <div class="skill-name">
-                            <span>CSS3/SASS</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 85%"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-card">
-                    <i class="fas fa-microchip"></i>
-                    <h3>IoT Systems</h3>
-                    <p>Designing and implementing IoT solutions with microcontrollers, sensors, and cloud integration. Specializing in smart city applications and automation systems.</p>
-                    <div class="skill-progress">
-                        <div class="skill-name">
-                            <span>NodeMCU/ESP32</span>
-                            <span>82%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 82%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-progress">
-                        <div class="skill-name">
-                            <span>Arduino</span>
-                            <span>78%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 78%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-progress">
-                        <div class="skill-name">
-                            <span>Sensors & RFID</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 75%"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-card">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Backend Development</h3>
-                    <p>Strong foundation in server-side programming with multiple languages. Experienced in API development, database design, and system architecture.</p>
-                    <div class="skill-progress">
-                        <div class="skill-name">
-                            <span>Python</span>
-                            <span>87%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 87%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-progress">
-                        <div class="skill-name">
-                            <span>Node.js</span>
-                            <span>83%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 83%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-progress">
-                        <div class="skill-name">
-                            <span>Java</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 80%"></div>
-                        </div>
-                    </div>
                 </div>
                 
                 <div class="skill-card">
                     <i class="fas fa-database"></i>
-                    <h3>Database Management</h3>
-                    <p>Working with both SQL and NoSQL databases to create robust data storage solutions. Experience with cloud databases and data optimization.</p>
+                    <h3>Databases</h3>
+                    <p>Developing robust server-side applications and managing data with SQL and NoSQL database systems.</p>
                     <div class="skill-progress">
                         <div class="skill-name">
-                            <span>Firebase</span>
+                            <span>MySQL</span>
                             <span>85%</span>
                         </div>
                         <div class="progress-bar">
@@ -2370,87 +2595,65 @@
                     <div class="skill-progress">
                         <div class="skill-name">
                             <span>MongoDB</span>
-                            <span>78%</span>
+                            <span>80%</span>
                         </div>
                         <div class="progress-bar">
-                            <div class="progress-fill" style="width: 78%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-progress">
-                        <div class="skill-name">
-                            <span>MySQL</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 75%"></div>
+                            <div class="progress-fill" style="width: 80%"></div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="skill-card">
-                    <i class="fas fa-video"></i>
-                    <h3>Digital Content Creation</h3>
-                    <p>Creative storytelling through video and digital media. Technical documentation, promotional content, and educational material creation.</p>
+                    <i class="fas fa-tools"></i>
+                    <h3>Tools & Technologies</h3>
+                    <p>Proficient with development tools, version control, and technologies essential for modern software development.</p>
                     <div class="skill-progress">
                         <div class="skill-name">
-                            <span>Premiere Pro</span>
-                            <span>72%</span>
+                            <span>Git</span>
+                            <span>90%</span>
                         </div>
                         <div class="progress-bar">
-                            <div class="progress-fill" style="width: 72%"></div>
+                            <div class="progress-fill" style="width: 90%"></div>
                         </div>
                     </div>
                     <div class="skill-progress">
                         <div class="skill-name">
-                            <span>After Effects</span>
-                            <span>65%</span>
+                            <span>VS Code</span>
+                            <span>92%</span>
                         </div>
                         <div class="progress-bar">
-                            <div class="progress-fill" style="width: 65%"></div>
+                            <div class="progress-fill" style="width: 92%"></div>
                         </div>
                     </div>
-                    <div class="skill-progress">
-                        <div class="skill-name">
-                            <span>Photoshop</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 70%"></div>
-                        </div>
-                    </div>
+                </div>
+            </div>
+            
+            <div class="section-header" style="margin-top: var(--space-4xl);">
+                <h2>Soft Skills</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Communication</h3>
+                    <p>Effective verbal and written communication skills developed through academic projects and team collaborations.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Problem Solving</h3>
+                    <p>Analytical thinking and creative problem-solving abilities applied to complex technical challenges.</p>
                 </div>
                 
                 <div class="skill-card">
                     <i class="fas fa-users"></i>
-                    <h3>Leadership & Events</h3>
-                    <p>Organizing and hosting tech symposiums, workshops, and coding competitions. Strong communication and leadership skills in academic and professional settings.</p>
-                    <div class="skill-progress">
-                        <div class="skill-name">
-                            <span>Event Planning</span>
-                            <span>88%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 88%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-progress">
-                        <div class="skill-name">
-                            <span>Public Speaking</span>
-                            <span>82%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 82%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-progress">
-                        <div class="skill-name">
-                            <span>Team Leadership</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 85%"></div>
-                        </div>
-                    </div>
+                    <h3>Teamwork</h3>
+                    <p>Collaborative approach to project development with experience in group projects and team-based initiatives.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Adaptability</h3>
+                    <p>Flexibility in learning new technologies and adapting to changing project requirements and environments.</p>
                 </div>
             </div>
         </div>
@@ -2460,182 +2663,180 @@
     <section class="projects" id="projects">
         <div class="container">
             <div class="section-header">
-                <h2>Featured Projects</h2>
+                <h2>Projects</h2>
             </div>
             <div class="projects-grid">
-                <!-- Project 1 -->
+                <!-- Project 1: MediCare Pro -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.pexels.com/photos/63294/autos-technology-vw-multi-storey-car-park-63294.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Smart Parking System" loading="lazy">
+                        <img src="https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="MediCare Pro Healthcare Management System" loading="lazy">
                         <div class="project-overlay">
-                            <h3>Smart Parking System</h3>
-                            <div class="project-tools">NodeMCU | RFID | React Native | Google Maps API</div>
+                            <h3>MediCare Pro</h3>
+                            <div class="project-tools">Complete Healthcare Management System</div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <p>An advanced IoT-based real-time parking slot detection system with mobile booking integration. Successfully reduced parking search time by 60% in prototype testing with smart sensors and automated management.</p>
+                        <p>A comprehensive healthcare management system designed to streamline hospital operations, patient records, and medical services.</p>
                         <div class="project-features">
                             <h4>Key Features:</h4>
                             <ul>
-                                <li>Real-time parking slot availability monitoring</li>
-                                <li>Mobile app for slot reservation and payment</li>
-                                <li>RFID-based authentication system</li>
-                                <li>Automated billing and receipt generation</li>
-                                <li>Admin dashboard for parking management</li>
-                                <li>SMS and push notification alerts</li>
+                                <li>Patient registration and electronic health records</li>
+                                <li>Appointment scheduling and management</li>
+                                <li>Doctor and staff management system</li>
+                                <li>Billing and inventory management</li>
+                                <li>Secure data encryption and backup</li>
                             </ul>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="btn btn-ghost btn-sm"><i class="fab fa-github"></i> View Code</a>
+                            <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> View Details</a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Project 2 -->
+                <!-- Project 2: JavaLearn -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="HR Management System" loading="lazy">
+                        <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="JavaLearn Learning Platform" loading="lazy">
                         <div class="project-overlay">
-                            <h3>HR Management System</h3>
-                            <div class="project-tools">MERN Stack | Firebase | Material UI | JWT</div>
+                            <h3>JavaLearn</h3>
+                            <div class="project-tools">W3Schools Reverse Engineered</div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <p>Comprehensive enterprise-grade system for managing employee records, attendance tracking, and leave applications with advanced role-based access control and analytics dashboard.</p>
+                        <p>Interactive Java learning platform replicating W3Schools functionality with enhanced features for better learning experience.</p>
                         <div class="project-features">
                             <h4>Key Features:</h4>
                             <ul>
-                                <li>Complete employee database management</li>
-                                <li>Attendance tracking with facial recognition</li>
-                                <li>Digital leave application workflow</li>
-                                <li>Performance analytics and reporting</li>
-                                <li>Payroll management integration</li>
-                                <li>Multi-role user access control</li>
+                                <li>Interactive code editor with live preview</li>
+                                <li>Step-by-step Java tutorials</li>
+                                <li>Code execution and debugging tools</li>
+                                <li>Progress tracking and certificates</li>
+                                <li>Community discussion forums</li>
                             </ul>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="btn btn-ghost btn-sm"><i class="fab fa-github"></i> View Code</a>
+                            <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> View Details</a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Project 3 -->
+                <!-- Project 3: HireFlow -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="HireFlow Resume Shortlisting Platform" loading="lazy">
+                        <div class="project-overlay">
+                            <h3>HireFlow</h3>
+                            <div class="project-tools">Resume Shortlisting Platform</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <p>AI-powered resume screening and shortlisting platform to streamline recruitment processes for HR departments.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Automated resume parsing and screening</li>
+                                <li>Candidate ranking based on job requirements</li>
+                                <li>Customizable screening criteria</li>
+                                <li>Interview scheduling integration</li>
+                                <li>Analytics and reporting dashboard</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4: LivePresence -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="LivePresence HR Management System" loading="lazy">
+                        <div class="project-overlay">
+                            <h3>LivePresence</h3>
+                            <div class="project-tools">HR Management System</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <p>Comprehensive HR management system for employee tracking, attendance, payroll, and performance management.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Employee database management</li>
+                                <li>Attendance and leave tracking</li>
+                                <li>Payroll processing system</li>
+                                <li>Performance evaluation modules</li>
+                                <li>Mobile app for employees</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5: Face Recognition Attendance -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/97077/pexels-photo-97077.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Face Recognition Attendance App" loading="lazy">
+                        <div class="project-overlay">
+                            <h3>Face Recognition Attendance</h3>
+                            <div class="project-tools">Python | OpenCV | Face Recognition</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <p>Automated attendance system using facial recognition technology with real-time tracking and reporting.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Real-time face detection and recognition</li>
+                                <li>Attendance marking automation</li>
+                                <li>Multiple camera support</li>
+                                <li>Attendance reports generation</li>
+                                <li>Admin dashboard for management</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6: Student Profile Tracker -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="https://images.pexels.com/photos/5940721/pexels-photo-5940721.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Student Profile Tracker" loading="lazy">
                         <div class="project-overlay">
                             <h3>Student Profile Tracker</h3>
-                            <div class="project-tools">React | Firebase | Chart.js | Material-UI</div>
+                            <div class="project-tools">MERN Stack | Chart.js | JWT</div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <p>Modern web application for comprehensive student profile management, GPA tracking, and attendance monitoring with advanced data visualization tools and department communication systems.</p>
+                        <p>Comprehensive academic tracking system for students, faculty, and administrators to manage academic progress.</p>
                         <div class="project-features">
                             <h4>Key Features:</h4>
                             <ul>
-                                <li>Comprehensive student performance tracking</li>
-                                <li>Interactive data visualization dashboards</li>
-                                <li>Department announcement and communication system</li>
-                                <li>Automated report generation and analytics</li>
+                                <li>Student profile management</li>
+                                <li>Academic performance tracking</li>
+                                <li>Attendance and grade records</li>
+                                <li>Event and assignment scheduling</li>
                                 <li>Parent-teacher communication portal</li>
-                                <li>Grade management and transcripts</li>
                             </ul>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="btn btn-ghost btn-sm"><i class="fab fa-github"></i> View Code</a>
+                            <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> View Details</a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Smart Home Automation" loading="lazy">
-                        <div class="project-overlay">
-                            <h3>Smart Home Automation</h3>
-                            <div class="project-tools">NodeMCU | React | Firebase | MQTT | Alexa</div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <p>Complete IoT-based home automation solution with voice control, remote access capabilities, and comprehensive energy monitoring for modern smart homes.</p>
-                        <div class="project-features">
-                            <h4>Key Features:</h4>
-                            <ul>
-                                <li>Voice-controlled home devices and appliances</li>
-                                <li>Real-time energy consumption monitoring</li>
-                                <li>Remote access via mobile and web applications</li>
-                                <li>Automated scheduling and scene management</li>
-                                <li>Security system integration with cameras</li>
-                                <li>Weather-based automation and alerts</li>
-                            </ul>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="btn btn-ghost btn-sm"><i class="fab fa-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 5 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="E-commerce Platform" loading="lazy">
-                        <div class="project-overlay">
-                            <h3>E-commerce Platform</h3>
-                            <div class="project-tools">MERN Stack | Stripe API | Redux | AWS</div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <p>Full-featured modern e-commerce platform with advanced product management, intelligent recommendations, and secure payment processing for seamless online shopping experiences.</p>
-                        <div class="project-features">
-                            <h4>Key Features:</h4>
-                            <ul>
-                                <li>Advanced product catalog with search and filtering</li>
-                                <li>Intelligent shopping cart with recommendations</li>
-                                <li>Secure payment processing with multiple gateways</li>
-                                <li>Real-time order tracking and notifications</li>
-                                <li>Vendor management and multi-store support</li>
-                                <li>Analytics dashboard for sales insights</li>
-                            </ul>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="btn btn-ghost btn-sm"><i class="fab fa-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 6 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Health Monitoring System" loading="lazy">
-                        <div class="project-overlay">
-                            <h3>Health Monitoring System</h3>
-                            <div class="project-tools">IoT Sensors | React Native | Node.js | ML</div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <p>Advanced wearable health monitoring system that continuously tracks vital signs, analyzes health patterns, and provides intelligent alerts for abnormal readings with AI-powered insights.</p>
-                        <div class="project-features">
-                            <h4>Key Features:</h4>
-                            <ul>
-                                <li>Continuous vital sign monitoring (Heart rate, BP, Temp)</li>
-                                <li>Emergency alert system with GPS location</li>
-                                <li>AI-powered health trend analysis and predictions</li>
-                                <li>Secure doctor-patient communication portal</li>
-                                <li>Medication reminders and health tips</li>
-                                <li>Family sharing and caregiver notifications</li>
-                            </ul>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="btn btn-ghost btn-sm"><i class="fab fa-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            
+            <div class="section-header" style="margin-top: var(--space-4xl);">
+                <h3>Additional Projects</h3>
+            </div>
+            <div class="skills-list" style="justify-content: center; margin-top: var(--space-xl);">
+                <span class="skill-tag">Personal Expense Tracker</span>
+                <span class="skill-tag">Employee Dashboard</span>
+                <span class="skill-tag">To-Do List Application</span>
+                <span class="skill-tag">Personal Portfolio Website</span>
             </div>
         </div>
     </section>
@@ -2644,92 +2845,220 @@
     <section class="education" id="education">
         <div class="container">
             <div class="section-header">
-                <h2>Education & Experience</h2>
+                <h2>Education</h2>
             </div>
             <div class="education-timeline">
                 <div class="education-item">
-                    <h3>Dr. Mahalingam College of Engineering</h3>
-                    <span class="education-date">2023 - 2027</span>
-                    <p><strong>Bachelor of Engineering in Computer Science</strong></p>
-                    <p>Current CGPA: 8.29/10 | Specializing in IoT Systems and Full Stack Development</p>
+                    <h3>Bachelor of Engineering in Computer Science</h3>
+                    <span class="education-date">2023 - 2027 (Expected)</span>
+                    <p><strong>Dr. Mahalingam College of Engineering and Technology, Pollachi</strong></p>
+                    <p>Current CGPA: 8.49/10 | Specializing in Software Development and Full Stack Technologies</p>
                     <ul>
-                        <li>Advanced coursework in Data Structures, Algorithms, and Computer Networks</li>
-                        <li>Active member of Computer Science Department's Coding Club</li>
-                        <li>Lead organizer for annual tech symposiums and hackathons</li>
-                        <li>Research focus on IoT applications in smart city development</li>
-                        <li>Dean's List recognition for academic excellence</li>
+                        <li>Coursework: Data Structures, Algorithms, Database Systems, Web Technologies</li>
+                        <li>Active member of CSE Association "DigiFlash"</li>
+                        <li>Participating in various technical workshops and seminars</li>
+                        <li>Focus on practical implementation of theoretical concepts</li>
                     </ul>
                 </div>
                 
                 <div class="education-item">
-                    <h3>Software Developer Intern - Genhub Innovations</h3>
-                    <span class="education-date">June 2024 - Present</span>
-                    <p><strong>Frontend Development & System Optimization</strong></p>
-                    <p>Contributed to multiple client projects focusing on React-based web applications and performance optimization initiatives.</p>
+                    <h3>Higher School Certificate (CBSE)</h3>
+                    <span class="education-date">Completed: March 2023</span>
+                    <p><strong>Honey Bunch School, Pollachi</strong></p>
+                    <p>Percentage: 72.6% | Computer Science Stream</p>
                     <ul>
-                        <li>Developed responsive UI components using React and modern CSS</li>
-                        <li>Achieved 30% improvement in application load time through optimization</li>
-                        <li>Implemented comprehensive state management using Redux Toolkit</li>
-                        <li>Collaborated with cross-functional teams on agile development cycles</li>
-                        <li>Mentored junior developers on best practices and code reviews</li>
+                        <li>Specialized in Computer Science and Mathematics</li>
+                        <li>Participated in school-level programming competitions</li>
+                        <li>Developed foundational programming skills</li>
+                        <li>Active participation in science exhibitions</li>
                     </ul>
                 </div>
                 
                 <div class="education-item">
-                    <h3>Oracle Certified Java Developer</h3>
-                    <span class="education-date">March 2024</span>
-                    <p><strong>Professional Certification in Java Programming</strong></p>
-                    <p>Comprehensive certification covering enterprise Java development and advanced programming concepts.</p>
+                    <h3>Secondary School Leaving Certificate (CBSE)</h3>
+                    <span class="education-date">Completed: March 2021</span>
+                    <p><strong>Honey Bunch School, Pollachi</strong></p>
+                    <p>Percentage: 90% | Consistent Academic Performance</p>
                     <ul>
-                        <li>Advanced object-oriented programming and design patterns</li>
-                        <li>Java collections framework and data structures</li>
-                        <li>Exception handling, multithreading, and concurrency</li>
-                        <li>Database connectivity with JDBC and JPA</li>
-                        <li>Web development with Spring Framework</li>
+                        <li>Strong foundation in Mathematics and Science</li>
+                        <li>Early interest in computer technology</li>
+                        <li>Participation in extracurricular activities</li>
+                        <li>Development of analytical thinking skills</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COMPACT EXPERIENCE SECTION ========== -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Internships & Experience</h2>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h3>Full Stack Development Intern</h3>
+                    <div class="company">Averexis Solutions</div>
+                    <div class="duration">2024 - 2025</div>
+                    <p>Worked on developing and maintaining full stack applications using modern web technologies.</p>
+                    <ul>
+                        <li>Developed responsive web applications using React and Node.js</li>
+                        <li>Implemented RESTful APIs for frontend-backend communication</li>
+                        <li>Worked with MongoDB for database management</li>
+                        <li>Collaborated with team members using Git version control</li>
+                        <li>Participated in code reviews and agile development processes</li>
                     </ul>
                 </div>
                 
-                <div class="education-item">
-                    <h3>AWS Cloud Practitioner Certified</h3>
-                    <span class="education-date">January 2024</span>
-                    <p><strong>Amazon Web Services Cloud Certification</strong></p>
-                    <p>Foundational certification in cloud computing and AWS services architecture.</p>
+                <div class="experience-card">
+                    <h3>Software Developer Intern</h3>
+                    <div class="company">BlueStocks Fintech</div>
+                    <div class="duration">Summer 2024</div>
+                    <p>Contributed to financial technology solutions development and implementation.</p>
                     <ul>
-                        <li>Cloud computing concepts and AWS global infrastructure</li>
-                        <li>Core AWS services including EC2, S3, RDS, and Lambda</li>
-                        <li>Security and compliance in AWS environments</li>
-                        <li>Cost optimization and billing management</li>
-                        <li>Cloud migration strategies and best practices</li>
+                        <li>Assisted in developing financial calculation modules</li>
+                        <li>Worked on data visualization components</li>
+                        <li>Participated in testing and debugging processes</li>
+                        <li>Learned about financial technology best practices</li>
+                        <li>Gained experience in professional software development workflows</li>
                     </ul>
                 </div>
                 
-                <div class="education-item">
-                    <h3>Honey Bunch School (CBSE)</h3>
-                    <span class="education-date">2019 - 2023</span>
-                    <p><strong>Higher Secondary Education</strong></p>
-                    <p>HSC: 72.6% | SSLC: 90% | Computer Science Specialization</p>
+                <div class="experience-card">
+                    <h3>Software Developer Intern</h3>
+                    <div class="company">Genhub Innovations</div>
+                    <div class="duration">June 13 - June 26, 2025</div>
+                    <p>Intensive 2-week internship focusing on frontend development and UI enhancement.</p>
                     <ul>
-                        <li>Winner of District-level Programming Competition (2022)</li>
-                        <li>President of School Technology Club for 2 years</li>
-                        <li>Developed and launched official school website</li>
-                        <li>Organized coding workshops for junior students</li>
-                        <li>Represented school in State-level Science Exhibition</li>
+                        <li>Worked on frontend development using JavaScript and React</li>
+                        <li>Assisted in building and debugging live issues</li>
+                        <li>Collaborated with team on UI enhancements</li>
+                        <li>Gained experience in real-world development workflows</li>
+                        <li>Participated in daily standups and team meetings</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COMPACT CERTIFICATIONS SECTION ========== -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2>Certifications</h2>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <i class="fas fa-code"></i>
+                    <h4>Oracle Certification in Java</h4>
+                    <div class="issuer">Oracle Corporation</div>
+                    <div class="date">2024</div>
                 </div>
                 
-                <div class="education-item">
-                    <h3>Tech Symposium Lead Organizer</h3>
-                    <span class="education-date">2023 - Present</span>
-                    <p><strong>College Technical Events & Workshops</strong></p>
-                    <p>Leading organization of major technical events and educational workshops at college and district level.</p>
-                    <ul>
-                        <li>Successfully managed events with 500+ participants</li>
-                        <li>Coordinated with 20+ industry speakers and tech experts</li>
-                        <li>Managed complete event logistics and technical infrastructure</li>
-                        <li>Designed promotional campaigns and event websites</li>
-                        <li>Generated 40% increase in student participation year-over-year</li>
-                    </ul>
+                <div class="certification-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Certified in C, C++, and Python</h4>
+                    <div class="issuer">Kalvi Institute</div>
+                    <div class="date">2023</div>
                 </div>
+                
+                <div class="certification-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Cyber Security Fundamentals</h4>
+                    <div class="issuer">Cisco Networking Academy</div>
+                    <div class="date">June 2025</div>
+                </div>
+                
+                <div class="certification-card">
+                    <i class="fas fa-database"></i>
+                    <h4>Introductory MongoDB Credential</h4>
+                    <div class="issuer">MongoDB University</div>
+                    <div class="date">June 2025</div>
+                </div>
+                
+                <div class="certification-card">
+                    <i class="fas fa-leaf"></i>
+                    <h4>Environment and Development</h4>
+                    <div class="issuer">NPTEL</div>
+                    <div class="date">2024</div>
+                </div>
+                
+                <div class="certification-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Environmental Impact Assessment [Elite]</h4>
+                    <div class="issuer">NPTEL</div>
+                    <div class="date">2024</div>
+                </div>
+                
+                <div class="certification-card">
+                    <i class="fas fa-brain"></i>
+                    <h4>Psychology of Learning [Elite]</h4>
+                    <div class="issuer">NPTEL</div>
+                    <div class="date">2023</div>
+                </div>
+                
+                <div class="certification-card">
+                    <i class="fas fa-language"></i>
+                    <h4>8 Hindi Exams Completed</h4>
+                    <div class="issuer">DBHPS (Dakshina Bharat Hindi Prachar Sabha)</div>
+                    <div class="date">2023-2025</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COMPACT EXTRACURRICULAR SECTION ========== -->
+    <section class="extracurricular" id="extracurricular">
+        <div class="container">
+            <div class="section-header">
+                <h2>Leadership & Extracurricular Activities</h2>
+            </div>
+            <div class="extracurricular-grid">
+                <div class="extracurricular-card">
+                    <h3>Vice President</h3>
+                    <div class="role">CSE Association "DigiFlash"</div>
+                    <div class="duration">2025–2026</div>
+                    <p>Led student initiatives, coordinated committees, and represented the association in faculty meetings.</p>
+                </div>
+                
+                <div class="extracurricular-card">
+                    <h3>Event Coordinator</h3>
+                    <div class="role">CSE Association "DigiFlash"</div>
+                    <div class="duration">2024–2025</div>
+                    <p>Planned and executed departmental events while managing volunteers, logistics, and registrations.</p>
+                </div>
+                
+                <div class="extracurricular-card">
+                    <h3>Placement Coordinator</h3>
+                    <div class="role">Department of Computer Science</div>
+                    <div class="duration">2024–2025</div>
+                    <p>Liaised between students and recruiters, organized placement drives, and managed interview schedules.</p>
+                </div>
+                
+                <div class="extracurricular-card">
+                    <h3>Industrial Visit Coordinator</h3>
+                    <div class="role">College IV Program</div>
+                    <div class="duration">2024–2025</div>
+                    <p>Organized company visits by coordinating approvals, logistics, and student participation.</p>
+                </div>
+                
+                <div class="extracurricular-card">
+                    <h3>Volunteer</h3>
+                    <div class="role">College Symposiums & Department Activities</div>
+                    <div class="duration">2023–2025</div>
+                    <p>Supported event operations, student coordination, and engagement programs for various college events.</p>
+                </div>
+            </div>
+            
+            <div class="section-header" style="margin-top: var(--space-4xl);">
+                <h3>Achievements & Workshops</h3>
+            </div>
+            <div class="skills-list" style="justify-content: center; margin-top: var(--space-xl);">
+                <span class="skill-tag">Flutter App Development Workshop - Kongu Engineering College 2024-2025</span>
+                <span class="skill-tag">Full Stack Development Workshop - Shri Ramakrishna Engineering College 2024-2025</span>
+                <span class="skill-tag">Multiple NPTEL Elite Certifications</span>
+                <span class="skill-tag">Hindi Language Proficiency (8 Exams)</span>
             </div>
         </div>
     </section>
@@ -2742,25 +3071,34 @@
             </div>
             <div class="contact-container">
                 <div class="contact-info">
-                    <h3>Let's Build Something Amazing Together</h3>
-                    <p>Whether you have a project idea, need consultation, or just want to connect about technology and innovation, I'm always excited to discuss new opportunities and collaborations. Let's create something that makes a difference.</p>
+                    <h3>Let's Connect!</h3>
+                    <p>I'm actively seeking opportunities in software development and full stack engineering. Whether you have a project idea, job opportunity, internship, or just want to discuss technology, feel free to reach out!</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>kabil.professional@gmail.com</span>
+                            <span>kabilk2023@gmail.com</span>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <span>+91 98765 43210</span>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 8667452487</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <span>Pollachi, Tamil Nadu, India</span>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Available for freelance work</span>
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.E. Computer Science (Expected Graduation: May 2027)</span>
                         </div>
+                        <div class="contact-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Open to Internships & Entry-level Software Engineering Roles</span>
+                        </div>
+                    </div>
+                    <div class="social-icons" style="margin-top: var(--space-xl);">
+                        <a href="https://github.com/kabil-8" title="GitHub" aria-label="GitHub Profile" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/k-kabil" title="LinkedIn" aria-label="LinkedIn Profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:kabilk2023@gmail.com" title="Email" aria-label="Send Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="contact-form">
@@ -2774,12 +3112,12 @@
                             <input type="email" id="email" required placeholder="Enter your email address">
                         </div>
                         <div class="form-group">
-                            <label for="subject">Project Type</label>
-                            <input type="text" id="subject" placeholder="Web Development, IoT, Consultation, etc.">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="Job Opportunity, Project, Collaboration, Internship">
                         </div>
                         <div class="form-group">
                             <label for="message">Your Message *</label>
-                            <textarea id="message" required placeholder="Tell me about your project or how I can help you..."></textarea>
+                            <textarea id="message" required placeholder="Tell me about your opportunity or project..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">
                             <i class="fas fa-paper-plane"></i>
@@ -2802,17 +3140,19 @@
                     <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
                     <a href="#education">Education</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#extracurricular">Leadership</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-social">
-                    <a href="#" title="GitHub" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-                    <a href="#" title="LinkedIn" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" title="Twitter" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="Instagram" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="CodePen" aria-label="CodePen Profile"><i class="fab fa-codepen"></i></a>
+                    <a href="https://github.com/kabil-8" title="GitHub" aria-label="GitHub Profile" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/k-kabil" title="LinkedIn" aria-label="LinkedIn Profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:kabilk2023@gmail.com" title="Email" aria-label="Send Email"><i class="fas fa-envelope"></i></a>
                 </div>
                 <div class="copyright">
-                    <p>&copy; <span id="year"></span> K. Kabil. All rights reserved. Built with passion and precision.</p>
+                    <p>&copy; <span id="year"></span> K. Kabil. All rights reserved. | Aspiring Software Engineer | Full Stack Developer</p>
+                    <p style="margin-top: var(--space-xs); font-size: 0.7rem;">Email: kabilk2023@gmail.com | Phone: +91 8667452487</p>
                 </div>
             </div>
         </div>
@@ -3117,6 +3457,54 @@
                             start: 'top 90%',
                             toggleActions: 'play none none none'
                         }
+                    });
+                });
+
+                // Experience card animations
+                gsap.utils.toArray('.experience-card').forEach(function(card, index) {
+                    gsap.from(card, {
+                        scrollTrigger: {
+                            trigger: card,
+                            start: 'top 85%',
+                            toggleActions: 'play none none none'
+                        },
+                        y: 50,
+                        opacity: 0,
+                        duration: 0.8,
+                        delay: index * 0.1,
+                        ease: 'power3.out'
+                    });
+                });
+
+                // Certification card animations
+                gsap.utils.toArray('.certification-card').forEach(function(card, index) {
+                    gsap.from(card, {
+                        scrollTrigger: {
+                            trigger: card,
+                            start: 'top 85%',
+                            toggleActions: 'play none none none'
+                        },
+                        y: 40,
+                        opacity: 0,
+                        duration: 0.7,
+                        delay: index * 0.08,
+                        ease: 'back.out(1.7)'
+                    });
+                });
+
+                // Extracurricular card animations
+                gsap.utils.toArray('.extracurricular-card').forEach(function(card, index) {
+                    gsap.from(card, {
+                        scrollTrigger: {
+                            trigger: card,
+                            start: 'top 85%',
+                            toggleActions: 'play none none none'
+                        },
+                        y: 50,
+                        opacity: 0,
+                        duration: 0.8,
+                        delay: index * 0.1,
+                        ease: 'power3.out'
                     });
                 });
 
